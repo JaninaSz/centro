@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px;
+   
+}
+
+.sct-body {
+
+    margin: 50px;
+}
+.sct-body .columns{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.cont-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 60px;
+    padding: 10px;
+}
+/*.columns {/*contenedor en body*
+    margin-left: 205px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}*/
+.box-content {
+    height:auto;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+.columns {
+    margin: 5px;
+    padding: 15px;
+    display: flex;
+    align-items: start;
+}
+
+.navbar-menu .navbar-item {/*espaciado de menu*/
+    padding: 20px 2rem;
+    
+}
+
+.form-group {
+    height:auto;
+    width: 300px;   
+}
+label{
+    padding: 10px;
+    margin: 15px;
+}
+.cont-ifr {
+    width: 800px;
+    
+}
+.ifr-escuela {
+    width: 800px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+.accordion{
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    background-color:#b7ddec;
+}
+
+.accordion__label, .accordion__content{
+    padding: 14px 20px;
+}
+.accordion__label{
+    display: block;
+    color: blue;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.1s;
+}
+.accordion__label:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.section1{
+    display: block;
+}
+.accordion__content{
+    background: white;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+}
+
+.accordion__input{
+    display: none;
+}
+
+.accordion__input:checked ~ .accordion__content{
+    display: block;
+}
+
+button{
+    padding: 10px;
+    width: 95px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+li{
+    text-decoration: none;
+}
+.invisible{
+    color: #b7ddec;
+
+}
+.cont-btn{
+    text-align: center;
+}
+
+footer {
+    margin-top: 100px;
+    background-color: #F2F6FA !important;
+}

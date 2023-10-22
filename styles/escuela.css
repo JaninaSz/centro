@@ -7,12 +7,13 @@
 h2 {
     font-size: 25px;
     text-align: center;
+    margin-top: 20px;
 }
 
 .columns {/*contiene al lateral y frame*/
     margin: 5px;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 button {
     padding: 15px;
@@ -22,8 +23,10 @@ button {
 }
 
 .cont-mesas {/*contiene al frame*/
-    align-items: center;
+    align-items: start;
     width: 900px;
+    margin-top: 20px;
+    
 }
 
 .ifr-escuela {
@@ -31,9 +34,26 @@ button {
     height: 500px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
-
+.st-title{
+    width: 80%;
+    margin: auto;
+    min-height: 3.25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    background-color: rgba(136, 180, 223, 0.684) ;
+    border-top-right-radius: 35px;
+    border-start-start-radius: 35px;
+    cursor: pointer;
+}
+.p-plus{
+    background-color: rgba(101, 148, 202, 0.684) ;
+    padding: 15px;
+    text-align: end;
+    cursor: pointer;
+}
 footer {
     margin-top: 100px;
     background-color: #F2F6FA !important;

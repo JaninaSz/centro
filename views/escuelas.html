@@ -4,55 +4,64 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/assets/img/icono.png" type="image/x-icon">
-    <script src="/scripts/index.js"></script>
+    <link rel="shortcut icon" href="../assets/img/icono.png" type="image/x-icon">
+    <script src="../scripts/index.js"></script>
     <title>Cómputos Curuzu</title>
-   
+    <style type="text/css">
+        .oculto {
+            display: none;
+        }
+
+        .visible {
+            display: inline;
+        }
+    </style>
+
     <!-- Bulma Version 0.9.0-->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="/styles/head.css">
-    <link rel="stylesheet" href="/styles/escuela.css">
+    <link rel="stylesheet" href="../styles/head.css">
+    <link rel="stylesheet" href="../styles/escuela.css">
 </head>
 
 <body>
-    <span class="time">
+    <!--span class="time">
         <p>Hora: </p>
         <div id="current_date">
             <script>
                 document.getElementById("current_date").innerHTML = Date();
             </script>
         </div>
-    </span>
+    </span-->
     <nav class="navbar-topNav">
         <div class="cont-title">
             <div class="navbar-brand">
 
                 <div>
-                    <span><a href="../index.html"><img src="/assets/img/frente.png" alt="logo Frente Renovador" width="120"
-                                height="120"></span>
-                    <p><b>Frente Renovador</b></p></a> 
+                    <span><a href="../index.html"><img src="../assets/img/frente.png" alt="logo Frente Renovador"
+                                width="120" height="120"></span>
+                    <p><b>Frente Renovador</b></p></a>
 
                 </div>
-            
-            <h1>Cómputos Curuzú Cuatiá</h1>
-            
-            <span class="navbarEnd">Cerrar sesión</span>
-           </div>
-            
+
+                <h1>Cómputos Curuzú Cuatiá</h1>
+
+                <span class="navbarEnd">Cerrar sesión</span>
+            </div>
+
         </div>
     </nav>
-   
-        
-    
+
+
+
     <nav class="navbar">
         <div class="cont-menu">
             <div class="navbar-menu">
                 <div class="navbar-start">
-                    <a class="navbar-item" href="/views/escuelas.html" >Escuelas </a>
-                    <a class="navbar-item" href="/views/mesas.html">Control de mesas</a>
-                    <a class="navbar-item" href="" >Registro</a>
-                    <a class="navbar-item" href="/views/resultados.html">Resultados</a>
+                    <a class="navbar-item" href="escuelas.html">Escuelas </a>
+                    <a class="navbar-item" href="mesas.html">Control de mesas</a>
+                    <a class="navbar-item" href="">Registro</a>
+                    <a class="navbar-item" href="resultados.php">Resultados</a>
                 </div>
 
             </div>
@@ -67,32 +76,68 @@
                     <div class="form-group">
                         <h3>Circuito 17</h3>
                     </div>
-                    <article class="post">
-                        <p></p>
                         <div class="form-group">
                             <ol>
-                                <a link href="/views/oficial.html" target="ifr-escuela"> Oficial</a></li>
-                                
-                                <li><a link href="/views/tecnica/tecnica.html" target="ifr-escuela" > N° 1 - Técnica</a></li>
-                                <li><a link href="/views/belgrano/belgrano.html" target="ifr-escuela"> N° 32 - Belgrano</a></li>
-                                <li><a link href="/views/centenario/centenario.html" target="ifr-escuela"> N° 471 - Centenario</a></li>
-                                <li><a link href="/views/sarmiento/sarmiento.html" target="ifr-escuela"> N° 564 - Sarmiento</a></li>
-                                <li><a link href="/views/rosende/rosende.html" target="ifr-escuela"> N° xxx Rosende</a></li>
-                                <li><a link href="/views/nacional/nacional.html" target="ifr-escuela"> Col. Nacional</a></li>
-                                <li><a link href="/views/sanmartin/sanmartin.html" target="ifr-escuela"> Col. San Martín</a></li>
-                                <li><a link href="/views/sorribes/sorribes.html" target="ifr-escuela"> Col. Barnidio Sorribes</a></li>
+                                <!--a link href="/views/oficial.html" target="ifr-escuela"> Oficial</a></li-->
+
+                                <li><a link href="belgrano/belgrano.html" target="ifr-escuela"> N° 32 - Belgrano</a></li>
+                                <li><a link href="nacional/nacional.html" target="ifr-escuela"> N° 2 - Col. Nacional</a></li>
+                                <li><a link href="sarmiento/sarmiento.html" target="ifr-escuela"> N° 564 - Sarmiento</a></li>
+                                <li><a link href="tecnica/tecnica.html" target="ifr-escuela"> N° 1 - Esc. Técnica</a></li>
+                                <li><a link href="sorribes/sorribes.html" target="ifr-escuela"> N° 3 - Col. Barnidio Sorribes</a></li>
+                                <li><a link href="rosende/rosende.html" target="ifr-escuela"> N° 321 - Rosende</a></li>
+                                <li><a link href="malvinas/malvinas.html" target="ifr-escuela"> N° 471 - 16 de noviembre</a></li>
+                                <li><a link href="centenario/centenario.html" target="ifr-escuela"> N° 435 - Centenario</a></li>
+                                <li><a link href="sanmartin/sanmartin.html" target="ifr-escuela"> N° 4 - Col. San Martín</a>
+                                </li>
                             </ol>
                         </div>
-                        <h3>Circuito 18</h3>
-                        <div class="form-group">
-                            <ol start="9">
-                                <li><a link href="/views/perugo1/perugo1.html" target="ifr-escuela"> N° 38 - José María Paz (Per.)</a></li>
-                                <li><a link href="/views/perugo2/perugo2.html" target="ifr-escuela"> N° 410 - Pcia. de Santa Cruz (Per.)</a></li>
-                                <li><a link href="/views/alberdi/alberdi.html" target="ifr-escuela"> N° 565 - Alberdi</a></li>
-                                <li> <a link href="/views/cazadores/cazadores.html" target="ifr-escuela"> N° 572 - Est. Cazadores Correntinos</a></li>
-                                <li> <a link href="/views/paraiso/paraiso.html" target="ifr-escuela"> N° 575 - Pje. Paraíso</a></li>
-                                <li> <a link href="/views/baibiene/baibiene.html" target="ifr-escuela"> N° 585 - Pje. Baibiene</a></li>
-                    </article>
+
+                        <div class="form-group"><br>
+                            <h4>Circuito 18 - 1° secc.</h4>
+                            <ol start="10">
+                                <li><a link href="alberdi/alberdi.html" target="ifr-escuela"> N° 565 - Alberdi</a></li>
+                            </ol>
+                        </div>
+                        
+                        <div class="box content" onclick="mostrar()">
+                            <p class="p-plus">más</p>
+                        <div class="oculto" id="oculto">
+                        <div class="form-group"><br>
+                            <h4>Circuito 19 - 2° secc.</h4>
+                            <ol start="11">
+                                <li> <a link href="cazadores/cazadores.html" target="ifr-escuela"> N° 572 - Est.
+                                        Cazadores Correntinos</a></li>
+                            </ol>
+                        </div>
+
+                        <div class="form-group"><br>
+                            <h4>Circuito 20 - 3° secc.</h4>
+                            <ol start="12">
+                                <li> <a link href="paraiso/paraiso.html" target="ifr-escuela"> N° 575 - Pje. Paraíso</a>
+                                </li>
+                            </ol>
+                        </div>
+
+                        <div class="form-group"><br>
+                            <h4>Circuito 21 - 4° secc.</h4>
+                            <ol start="13">
+                                <li> <a link href="baibiene/baibiene.html" target="ifr-escuela"> N° 585 - Pje.
+                                        Baibiene</a></li>
+                            </ol>
+                        </div>
+
+                        <div class="form-group"><br>
+                            <h4>Circuito 22 - 5° secc.</h4>
+                            <ol start="14">
+                                <li><a link href="perugo1/perugo1.html" target="ifr-escuela"> N° 38 - José María Paz
+                                        (Per.)</a></li>
+                                <li><a link href="perugo2/perugo2.html" target="ifr-escuela"> N° 410 - Pcia. de Santa
+                                        Cruz (Per.)</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                    </div>
                 </div>
             </div>
             <div class="cont-mesas">
@@ -107,8 +152,9 @@
     <footer>
         <div class="container">
             <div class="col-12 color10 text-center">
-                <h3 style="text-align:center"><strong>Gisela Yiyi S&aacute;nchez | Todos los derechos reservados</strong></h3>
-                    <h3 style="text-align:center">3774-455436</h3>
+                <h3 style="text-align:center"><strong>Gisela Yiyi S&aacute;nchez | Todos los derechos
+                        reservados</strong></h3>
+                <h3 style="text-align:center">3774-455436</h3>
             </div>
         </div>
     </footer>

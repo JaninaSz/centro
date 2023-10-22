@@ -69,3 +69,7 @@ function agrupar() {
     document.getElementById("resultado").style.backgroundColor = "aquamarine";*/
 
 }
+
+function clikmes(){
+
+}

@@ -1,17 +1,24 @@
+<!--?php
+include("connection.php");
+$con = connection();
+
+$sql = "SELECT * FROM registro";
+$query = mysqli_query($con, $sql);
+?-->
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/assets/img/icono.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/icono.png" type="image/x-icon">
     <title>Cómputos Curuzu</title>
 
     <!-- Bulma Version 0.9.0-->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="/styles/index.css">
-    <script src="/scripts/index.js"></script>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js"></script>
 </head>
 
 <body>
@@ -47,7 +54,7 @@
             <div class="navbar-brand">
 
                 <div>
-                    <span><a href="index.html"><img src="/assets/img/frente.png" alt="logo Frente Renovador" width="120"
+                    <span><a href="index.html"><img src="assets/img/frente.png" alt="logo Frente Renovador" width="120"
                                 height="120"></a> </span>
                     <p><b>Frente Renovador</b></p>
                     
@@ -81,9 +88,10 @@
         <label for="clave">Clave U: </label>
         <input id="clave" type="password" Clave>
         <br>
-        <a href="/views/escuelas.html"><button class="btn-login" onclick="validar()">Ingresar </button></a>
+        <a href="views/escuelas.html"><button class="btn-login" onclick="validar()">Ingresar </button></a>
     </div>
-
+    <a href="views/esc.php">Escuela</a>
+<a href="views/mesa.php">Mesa</a>
     <!-- 
     <div class="window-notice" id="window-notice">
         <div class="content">
@@ -99,9 +107,9 @@
 -->
 
     <div class="timer">
-        <span>Tiempo conectado: </span>
+        <!--span>Tiempo conectado: </span>
         <input class="timepage" size="5" id="timespent" name="timespent"><br>
-        <!--<button id="msj" type="submit">Instrucciones</button>-->
+        <button id="msj" type="submit">Instrucciones</button>-->
         <input class="btn-instru" type="submit" onclick="clicked();" value="Instrucciones" />
     </div>
     <div id="resul"> </div>

@@ -21,7 +21,9 @@ html {
 }
 
 body {
+    background-color: #fff;
     line-height: inherit
+    
 }
 
 hr {
@@ -1829,7 +1831,7 @@ video {
 }
 
 .text-\[\#\#646464\] {
-    color: ##646464
+    color: #646464
 }
 
 .text-\[\#000\] {

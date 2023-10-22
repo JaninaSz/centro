@@ -53,15 +53,20 @@ function confirmar() {
     var msg = document.getElementById("window-notice");
     msg.style.display = "none";
     document.getElementById("numMesa").textContent = " " + nMesa;
-    document.getElementById("numero_mesa").textContent =parseInt(nMesa);
-    
+    //document.getElementById("numero_mesa").textContent =parseInt(nMesa);
+    document.getElementById("numeEsa").value =nMesa;
+    //document.getElementById("numeEsa").textContent =nMesa;
 }
 
+function clikmes(){
+    //Para cambiar color boton de modificacion de mesas
+}
 function regresar() {
     window.history.back();
 }
 function resetear() {
-    if (alert('\n\n__IMPORTANTE__\n\nSe borrarán todos los datos cargados.\n\n')) {
+var confirma= confirm('\n__IMPORTANTE__\n\nSe borrarán todos los datos cargados.\n\n');
+    if (confirma==true) {
         frmActa.reset();       
     } else {
         alert("Volviendo");
@@ -100,8 +105,8 @@ document.getElementById("nMesa").textContent="mesa "+nuMesa;
 
 }*/
 
-/*Variables para cargar totales desde php*/
+/*Variables para cargar totales desde php
 var toa=document.getElementsByName("ta").textContent;
 var tob=document.getElementsByName("tb").textContent;
 var toc=document.getElementsByName("tc").textContent;
-var tod=document.getElementsByName("td").textContent;
+var tod=document.getElementsByName("td").textContent;*/

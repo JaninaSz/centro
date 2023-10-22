@@ -50,7 +50,7 @@ function showTime() {
   //$("#HoraActual").text(hours+ ":" +minutes+ ":" +seconds);
   //setTimeout("showTime()", 1000);
   //console.log(HoraActual +"\nds   " +hours+ ":" +minutes+ ":" +seconds);
-  document.getElementById("resul").textContent = "\nEstás por : " + hours + ":" + minutes + ":" + seconds;
+  document.getElementById("resul").textContent = "| " + hours + ":" + minutes + ":" + seconds;
 
   //===
   // INIT
@@ -58,4 +58,14 @@ function showTime() {
   updateCountdown();
   // Refresh every second
   setInterval(updateCountdown, seconds);
+}
+document.getElementById("section2").style.display="block";
+function mostrar() {    
+  //Muestra u oculta el de circuitos y candidatos
+  var estado =document.getElementById("oculto").style.display;
+  if(estado=="none"){
+      document.getElementById("oculto").style.display="inline";
+  }else{
+      document.getElementById("oculto").style.display="none";        
+  }    
 }

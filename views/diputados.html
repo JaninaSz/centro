@@ -1,62 +1,56 @@
-<?php
-echo '<link href="../styles/generales.css" type="text/css" rel="stylesheet">';
-//suma las columnas de la base de datos:
-function getTable($lectura)
-{
-  include("connection.php");
-  $con = connection();
-
-  $sql = "SELECT parti1,parti3,parti4, SUM(dip_1) AS tdp1, SUM(dip_3) AS tdp3, SUM(dip_4) AS tdp4 FROM `votos`";
-  return mysqli_query($con, $sql);
-  //registro: SELECT `circuito`, SUM(`nulpd`) AS nulopd, SUM(`recpd`) AS recupd, SUM(`imppd`) AS impupd, SUM(`compd`) AS comapd, SUM(`blapd`) AS blanpd, SUM(`totpd`) AS totapd FROM `registro` 
-}
-
-?>
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../styles/generales.css" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/main.cssc">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="../styles/res-dip.css"> 
   <style data-styled="active" data-styled-version="5.3.11"></style>
     <title>generales</title>
 </head>
 
 <body>
-  <h3>Diputados Nacionales</h3>
-  <?php
-  //recorre las columnas de la base de datos:
-  function iterateDataToTable($data1)
-  {
-    $lines = '';
-    while ($row = mysqli_fetch_array($data1)) {
+    
+<h3>Diputados Nacionales</h3>
+<br>
+<div class="cont-parla">
+<!--JUNTOS-->
+  <div class="cont-dip3">
+    <img class="h-12-w-12" src="../assets/logos/000132.png" alt="logo_agrupacion"><br>
+    <br><hr>
+    <p class="sp-votos"><span class="tpd-1" id="tdp-1"> 7205</span> votos</p>
+  
+</div>
 
-      $lines .= '
-      <input id="e-parti1" value=' . $row['parti1'] . '> </input>
-      <input id="e-tdp1" value=' . $row['tdp1'] . '> </input><br>
-      <input id="e-parti3" value=' . $row['parti3'] . '> </input>
-      <input id="e-tdp3" value=' . $row['tdp3'] . '> </input><br>
-      <input id="e-parti4" value=' . $row['parti4'] . '> </input>
-      <input id="e-tdp4" value=' . $row['tdp4'] . '> </input>
-      ';
-    }
+<div class="cont-dip2">
+    <?php
+        //UNION
+    ?>
+    <img class="h-12-w-12" src="../assets/logos/000134.png" alt="logo_agrupacion"><br>
+    <br><hr>
+    <p class="sp-votos"><span class="tpd-3" id="tdp-3"> 9453</span> votos</p>
+  
+</div>
+<div class="cont-dip4">
+    <?php
+        //LIBERTAD
+    ?>
+    <img class="h-12-w-12" src="../assets/logos/000135.png" alt="logo_agrupacion"><br>
+    <br><hr>
+    <p class="sp-votos"><span class="tpd-4" id="tdp-4"> 6231</span> votos</p>
+  
+</div>
 
-    return $lines;
-  }
+</div>
 
-  $data1 = getTable('lectura');
-  $lines = iterateDataToTable($data1);
-  echo $lines;
-  ?>
 
     <div class="dv-main">
         <section class="sct-candi" name="agrupaciones">
             <div class="dv-datos">
               <div class="flex-1">
-                <ul class="p-4 md:p-0  ">
-                  <!--inicio-->
+               <!--inicio  
+              <ul class="p-4 md:p-0  ">
+                 
                   <li>
                     <div class="escrutinio_customGridItem2__2Ah9k">
                       <div style="font-weight: bold;">Diputados</div>
@@ -213,7 +207,7 @@ function getTable($lectura)
             </div>
           </section>
     </div>
-
-    <script src="../scripts/resul.js"></script>
+fin  -->
+    <script src="../scripts/resul-dip.js"></script>
 </body>
 </html>

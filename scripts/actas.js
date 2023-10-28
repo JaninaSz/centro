@@ -43,7 +43,8 @@ function continuar() {
         alert("Se ha encontrado un error.\n Volverá a la página anterior.");
         window.history.back();
     }
-    document.getElementById("p-confirm").textContent = "\nEstás por cargar la mesa: " + nMesa;
+    document.getElementById("p-confirm").textContent = "\nNo se admiten, nuevos ingresos.";
+    document.getElementById("p-confirm").style.color="red";
     document.getElementById("close-button").style.display = "none";
     /*textContent = "Confirmar";*/
     document.getElementById("btn-confir").style.display = "flex";

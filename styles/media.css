@@ -1,0 +1,201 @@
+@media(max-width:881px) {
+    .navbar-menu {
+        width: 600px;
+        height: 220px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 30px;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    main .sctEpisodios,
+    main .sctPersonajes {
+        grid-template-columns: 2fr 1fr;
+        padding: 5px;
+    }
+
+    h2 {
+        font-size: 16px;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .navbar {
+        height: 40px;
+    }
+
+    .navbar-topNav {
+        margin: auto;
+        width: 95%;
+    }
+
+    header img {
+        width: 60px;
+    }
+
+    .navbar-start {
+        padding: 5px;
+        margin-top: 10px;
+        height: 200px;
+    }
+
+    .cont-menu {
+        width: 170px;
+        height: 60px;
+    }
+
+    .navbar-item {
+        padding: 10px;
+    }
+
+    .navbar-end,
+    .navbarEnd {
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    .body {
+        max-width: 750px;
+        padding: 3px;
+        margin-top: 8px;
+        margin: 0px;
+    }
+    .sct-body{
+        margin: 0px;
+    }
+    .columns {
+        margin: 0px;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .column-is-13 {
+        width: 180px;
+    }
+
+    .acordeon-invisible {
+        width: 180px;
+    }
+
+    .box-content {
+        width: 180px;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+.ifr-escuel{
+    width: 600px;
+        height: 600px; 
+}
+    .cont-ifr {
+        width: 800px;
+        height: 800px;    }
+
+    .ifr-escu{
+        max-width: 800px;
+        height: auto;
+    }
+    .ifr-escuela {
+        max-width: 800px;
+        height: 800px;
+        padding: 3px;
+        margin-top: 8px;
+    }
+
+    .window-notice .content {
+        flex-direction: column;
+        margin: auto;
+        max-width: 70px;
+        min-width: 40px !important;
+        overflow: hidden;
+        position: relative;
+        width: 60%;
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .cont-footer {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .cont-footer span {
+        text-align: center;
+        margin-bottom: 10px;
+        width: 100px;
+    }
+}
+
+/*================================================*/
+
+@media(max-width:505px) {
+    h1 {
+        font-size: 10px;
+        font-weight: bold;
+        color: black;
+    }
+    h2 {
+        font-size: 8px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .cont-head {
+        width: 200px;
+        display: block;
+    }
+
+    .bd-margin {
+        margin: 10px 20px;
+    }
+
+    .box-content {
+        position: absolute;
+        margin: auto;
+
+    }
+    
+    .column-is-13 {
+        width: 90px;
+    }
+
+    .acordeon-invisible {
+        width: 90px;
+    }
+
+    .box-content {
+        width: 90px;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .cont-ifr {
+        width: 500px;
+        height: 500px;    }
+
+    .ifr-escu{
+        max-width: 500px;
+        height: auto;
+    }
+    .ifr-escuela {
+        max-width: 500px;
+        height: 500px;
+        padding: 3px;
+        margin-top: 8px;
+    }
+
+    .cont-footer {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}

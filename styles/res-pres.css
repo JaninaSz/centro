@@ -34,13 +34,15 @@ h3 {
     text-align: end;
     cursor: pointer;
 }
+.sp-votos{
+    font-size: xx-large;
+}
 
 .cont-task1 {
     width: 200px;
     height: auto;
     border: 1px solid grey;
-    border-left: 9px solid #5b97d7;
-    border-top: 4px solid #5b97d7;
+    border-left: 9px solid #bfdc68;
     border-radius: 5px;
     padding: 5px;
     margin-top: 5px;
@@ -50,7 +52,7 @@ h3 {
     width: 200px;
     height: auto;
     border: 1px solid grey;
-    border-left: 9px solid #651273;
+    border-left: 9px solid #dd9f19;    
     border-radius: 10px;
     padding: 5px;
     margin-top: 5px;
@@ -60,7 +62,8 @@ h3 {
     width: 200px;
     height: auto;
     border: 1px solid grey;
-    border-left: 9px solid #bfdc68;
+    border-left: 9px solid #5b97d7;
+    border-top: 4px solid #5b97d7;
     border-radius: 10px;
     padding: 5px;
     margin-top: 5px;
@@ -69,7 +72,8 @@ h3 {
     width: 200px;
     height: auto;
     border: 1px solid grey;
-    border-left: 9px solid #dd9f19;
+    
+    border-left: 9px solid #651273;
     border-radius: 10px;
     padding: 5px;
     margin-top: 5px;
@@ -90,10 +94,61 @@ h3 {
     border-radius: 25px;
     overflow: hidden;
 }
+
+.accordion1 {    
+    width: 170px;
+    height: auto;
+    text-align: center;
+    border-top: 7px solid #bfdc68;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.accordion2 {    
+    width: 170px;
+    height: auto;
+    text-align: center;
+    border-top: 7px solid#dd9f19;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
 .accordion3 {    
     width: 170px;
     height: auto;
-    border-top: 11px solid #bfdc68;
+    text-align: center;
+    border: 1px solid grey;
+    border-left: 11px solid #5b97d7;
+    border-top: 9px solid #5b97d7;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    overflow: hidden;
+}
+.accordion3:hover {  
+    padding: 15px;
+}
+.accordion4 {    
+    width: 170px;
+    height: auto;
+    text-align: center;
+    border-top: 7px solid #651273;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.accordion5 {    
+    width: 170px;
+    height: auto;
+    text-align: center;
+    border-top: 7px solid #e94242;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 25px;
@@ -118,26 +173,29 @@ h3 {
 
 .accordion__label:hover {
    cursor: pointer;
+   
 }
 .section1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
+    margin-left: 20px;
 }
 .section2 {
     display: block;
+    margin-left: 20px;
 }
 .section3 {
-    margin-left: 20px;
-    display: inherit;
+    margin-left: 10px;
+    display: block;
     justify-content: space-between;
     align-items: center;
 }
 .section4 {
     display: block;
+    margin-left: 20px;
 }
 .section5 {
     display: block;
+    margin-left: 20px;
 }
 
 .accordion__content {
@@ -153,6 +211,11 @@ h3 {
 
 .accordion__input:checked~.accordion__content {
     display: block;
+}
+
+.h-12-w-12xx{
+    margin: auto;
+    align-self: center;
 }
 .pf-porc{
     font-size: x-large;

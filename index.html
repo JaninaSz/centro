@@ -11,14 +11,12 @@ $query = mysqli_query($con, $sql);
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="assets/img/icono.png" type="image/x-icon">
-    <title>Cómputos Curuzu</title>
-
-    <!-- Bulma Version 0.9.0-->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="shortcut icon" href="assets/img/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/media.css">
     <link rel="stylesheet" href="styles/index.css">
     <script src="scripts/index.js"></script>
+    <title>Cómputos Curuzu</title>
 </head>
 
 <body>
@@ -52,19 +50,16 @@ $query = mysqli_query($con, $sql);
     <nav class="navbar topNav">
         <div class="container">
             <div class="navbar-brand">
-
                 <div>
-                    <span><a href="index.html"><img src="assets/img/frente.png" alt="logo Frente Renovador" width="120"
-                                height="120"></a> </span>
-                    <p><b>Frente Renovador</b></p>
-                    
+                    <span>
+                        <a href="index.html"><img src="assets/logos/up-10cur.png" alt="logo Frente Renovador" width="120"
+                                height="120"></a> 
+                    </span><p><b></b></p>                    
                 </div>
-
             </div>
             <h1>Cómputos Curuzú Cuatiá</h1>
             <div class="navbar-end">
                 <p>Cerrar sesión</p>
-
             </div>
         </div>
     </nav>
@@ -90,8 +85,7 @@ $query = mysqli_query($con, $sql);
         <br>
         <a href="views/escuelas.html"><button class="btn-login" onclick="validar()">Ingresar </button></a>
     </div>
-    <a href="views/esc.php">Escuela</a>
-<a href="views/mesa.php">Mesa</a>
+    
     <!-- 
     <div class="window-notice" id="window-notice">
         <div class="content">

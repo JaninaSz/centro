@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="../assets/img/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="shortcut icon" href="/assets/img/FRC-4x4.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/media.css">
     <script src="../scripts/index.js"></script>
     <title>Cómputos Curuzu</title>
     <style type="text/css">
@@ -19,8 +21,7 @@
 
     <!-- Bulma Version 0.9.0-->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="../styles/head.css">
+    <link rel="stylesheet" href="../styles/heads.css">
     <link rel="stylesheet" href="../styles/escuela.css">
 </head>
 
@@ -33,35 +34,47 @@
             </script>
         </div>
     </span-->
+    <span class="time">       
+        <div id="current_date">
+
+            <script>
+                //document.getElementById("current_date").innerHTML = Date();
+                // create a new `Date` object
+                var today = new Date();
+
+                // get the date and time
+                var now = '  ' + today.toLocaleString();
+                document.getElementById("current_date").innerHTML = (now);
+            </script>
+        </div>
+    </span>
     <nav class="navbar-topNav">
         <div class="cont-title">
             <div class="navbar-brand">
-
-                <div>
-                    <span><a href="../index.html"><img src="../assets/img/frente.png" alt="logo Frente Renovador"
-                                width="120" height="120"></span>
-                    <p><b>Frente Renovador</b></p></a>
-
+    
+                <div class="dv-link">
+                    <span><a href="../index.html"><img src="../assets/logos/up-10cur.png" alt="logo Frente Renovador" width="120"
+                                height="120">
+                    <p><b></b></p></a></span>
                 </div>
-
-                <h1>Cómputos Curuzú Cuatiá</h1>
-
-                <span class="navbarEnd">Cerrar sesión</span>
-            </div>
-
+            <div>
+            <h1>Cómputos Curuzú Cuatiá</h1>
         </div>
+        <span class="navbarEnd">Cerrar sesión
+        </span>
+        </div>
+
+    </div>
     </nav>
-
-
 
     <nav class="navbar">
         <div class="cont-menu">
             <div class="navbar-menu">
                 <div class="navbar-start">
                     <a class="navbar-item" href="escuelas.html">Escuelas </a>
-                    <a class="navbar-item" href="mesas.html">Control de mesas</a>
+                    <a class="navbar-item" href="">Control de mesas</a>
                     <a class="navbar-item" href="">Registro</a>
-                    <a class="navbar-item" href="resultados.php">Resultados</a>
+                    <a class="navbar-item" href="resultados.html">Resultados</a>
                 </div>
 
             </div>
@@ -71,8 +84,9 @@
 
         <div class="columns">
             <div class="column is-4">
+                
+                <h2><b> Seleccione Escuela a cargar: </b></h2>
                 <div class="box content">
-
                     <div class="form-group">
                         <h3>Circuito 17</h3>
                     </div>
@@ -136,14 +150,16 @@
                                         Cruz (Per.)</a></li>
                             </ol>
                         </div>
-                    </div>
+                        <br><br>
+                    <a href="">Agregar Escuela</a> <br>
+                    <a href="">Agregar Mesa</a>
+                </div>
                     </div>
                 </div>
             </div>
             <div class="cont-mesas">
-                <h2><b> Seleccione la Escuela a cargar: </b></h2>
                 <!--El iframe deberia estar hidden, solo ser visible al hacer clic en una Escuela y cargar la correspondiente-->
-                <iframe class="ifr-escuela" name="ifr-escuela" src=""></iframe>
+                <iframe class="ifr-escuel" name="ifr-escuela" src=""></iframe>
             </div>
         </div>
 

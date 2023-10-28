@@ -5,7 +5,7 @@ function agrupar() {
     var opciones = document.getElementsByTagName("option");
     
     switch (v_circuito) {
-        case "all":
+        case "99":
             document.getElementById("cir17").style.display="block";
             document.getElementById("cir18").style.display = "block";
             document.getElementById("cir19").style.display = "block";

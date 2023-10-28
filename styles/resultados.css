@@ -28,7 +28,7 @@ h3{
    /*flex-direction: column; */
 }
 .pf-part{
-    font-size: 10px;
+    font-size: 17px;
     font-weight: bold;
 }
 .dv-estadisticas{
@@ -39,7 +39,7 @@ h3{
     align-items:center;
     flex-direction: column; 
     border-radius: 20px;
-    background-color:#b7ddec;
+    background-color:#ffffff;
 }
 .tabll{
     display: flex;
@@ -113,15 +113,17 @@ label{
     height: 600px;
     justify-content: space-between;
     align-items: center;
-    background-color:#c3dbe5f3;
+    background-color:#ffffff;
+   
 }
 .ifr-escuela {
     width: 800px;
-    height: 500px;
+    height: 580px;
     display: flex;
     justify-content: center;
     align-items: start;
-    background-color:#c3dbe5f3;
+    background-color:#ffffff;
+    
     
 }
 .accordion{

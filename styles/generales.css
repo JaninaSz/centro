@@ -21,7 +21,11 @@ html {
     font-variation-settings: normal;
     line-height: 1.5
 }
-
+.parrafototal{
+    align-self: center;
+    margin-top: 10px;
+    width: 165px;/*****************/
+}
 body {
     background-color: white;
     line-height: inherit
@@ -30,6 +34,7 @@ header{
     width: 100%;
     position: fixed;
     background-color: white;
+  
 }
 h3{
     margin: auto;
@@ -70,7 +75,8 @@ hr {
     align-items:center;
    /*flex-direction: column; */
 }
-.cont-task1{
+
+.cont-task2{
     border: 1px solid grey;
     border-left: 7px solid #5b97d7;
     border-radius: 10px;
@@ -106,8 +112,7 @@ textarea {
 }
 
 .dv-estadisticas{
-    width: 95%;
-    margin:auto;
+    width: 90%;
     display:flex;   
     justify-items: normal;
     align-items:center;
@@ -170,10 +175,13 @@ border-bottom: 2px solid rgb(182, 201, 216);
 }
 .h-12-w-12{
     padding: 5px;
-align-self: center;
+    align-self: center;
 }
 .dv-frencur{
+    height: 140px;
+    margin-top: 0px;
     padding: 5px;
+    display: flex;
 }
 .cont-candidatocont-candidato{
     display: flex;

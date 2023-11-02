@@ -104,7 +104,22 @@ hr {
     align-items:center;
    /*flex-direction: column; */
 }
+.cont-parlas{
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 0px;
+    overflow: hidden;
+    margin-top: 5px;
 
+    display:flex;   
+    justify-content: space-between;
+    align-items:center;
+   /*flex-direction: column; */
+}
+.log-par{
+    width: 50px;
+}
 .cont-task2{
     border: 1px solid grey;
     border-left: 7px solid #5b97d7;
